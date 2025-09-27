@@ -1,10 +1,9 @@
 package core.basesyntax;
-
 import java.util.Random;
-
 public class FigureSupplier {
     private static final int FIGURE_COUNT = 5;
     private static final int MAX_SIZE = 100;
+    private static final int MIN_SIZE = 1;
 
     private static final String DEFAULT_COLOR = "white";
     private static final double DEFAULT_RADIUS = 10.0;
@@ -16,9 +15,9 @@ public class FigureSupplier {
         int figureType = random.nextInt(FIGURE_COUNT);
         String color = colorSupplier.getRandomColor();
 
-        double size1 = random.nextInt(MAX_SIZE) + 1;
-        double size2 = random.nextInt(MAX_SIZE) + 1;
-        double size3 = random.nextInt(MAX_SIZE) + 1;
+        double size1 = random.nextInt(MAX_SIZE) + MIN_SIZE;
+        double size2 = random.nextInt(MAX_SIZE) + MIN_SIZE;
+        double size3 = random.nextInt(MAX_SIZE) + MIN_SIZE;
 
         switch (figureType) {
             case 0:

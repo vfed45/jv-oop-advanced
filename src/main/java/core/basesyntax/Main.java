@@ -1,5 +1,4 @@
 package core.basesyntax;
-
 public class Main {
     private static final int ARRAY_SIZE = 6;
 
