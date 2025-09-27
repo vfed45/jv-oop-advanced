@@ -7,7 +7,7 @@ public abstract class Figure implements Drawable, AreaCalculatable {
         this.color = color;
     }
 
-   @Override
+    @Override
     public abstract double getArea();
 
     @Override

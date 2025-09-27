@@ -8,7 +8,7 @@ public class Main {
         for (int i = 0; i < arraySize / 2; i++) {
             figures[i] = figureSupplier.getRandomFigure();
         }
-        for (int i = arraySize / 2; i <arraySize; i++) {
+        for (int i = arraySize / 2; i < arraySize; i++) {
             figures[i] = figureSupplier.getDefaultFigure();
         }
         System.out.println("List of all figures:");

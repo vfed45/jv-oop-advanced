@@ -1,5 +1,5 @@
 package core.basesyntax;
-import java.awt.*;
+
 import java.util.Random;
 
 public class FigureSupplier {
@@ -14,15 +14,18 @@ public class FigureSupplier {
         switch (figureType) {
             case 0:
                 return new Circle(color, random.nextInt(MAX_SIZE));
-                case 1:
-                    return new Square(color, random.nextInt(MAX_SIZE));
-                    case 2:
-                        return new Rectangle(color, random.nextInt(MAX_SIZE), random.nextInt(MAX_SIZE));
-                        case 3:
-                            return new RightTriangle(color, random.nextInt(MAX_SIZE), random.nextInt(MAX_SIZE));
-                            case 4:
+            case 1:
+                return new Square(color, random.nextInt(MAX_SIZE));
+            case 2:
+                return new Rectangle(color, random.nextInt(MAX_SIZE),
+                        random.nextInt(MAX_SIZE));
+            case 3:
+                return new RightTriangle(color, random.nextInt(MAX_SIZE),
+                        random.nextInt(MAX_SIZE));
+            case 4:
             default:
-                                return new IsoscelesTrapezoid(color, random.nextInt(MAX_SIZE), random.nextInt(MAX_SIZE), random.nextInt(MAX_SIZE));
+                return new IsoscelesTrapezoid(color, random.nextInt(MAX_SIZE),
+                        random.nextInt(MAX_SIZE), random.nextInt(MAX_SIZE));
         }
     }
 
